@@ -1,0 +1,166 @@
+% Universidade Aberta
+% Template TeX para relatório de trabalhos
+% 2025
+%
+%
+% Dados para a capa
+\newcommand{\Titulo}{Planeamento e Desenvolvimento de Sistemas de Informação}
+\newcommand{\SubTitulo}{Trabalho Grupo - Topico 3}
+\newcommand{\Ano}{2025}
+\newcommand{\Autor}{
+    Pedro Morais - 2401849 \\
+    Hugo Gonçalves - 2100562 \\
+    Pedro Moro - 2001642 \\
+    Luis Peixoto - 2402741 \\
+}
+%
+%
+\documentclass[12pt,a4paper,final]{article}
+\usepackage{csquotes}
+\usepackage[portuguese]{babel}
+\usepackage{polyglossia}
+\setdefaultlanguage{portuguese}
+\usepackage{graphicx}
+\graphicspath{ {./images/} }
+\usepackage[a4paper,top=3cm,bottom=3cm,left=3.5cm,right=2cm]{geometry}
+\usepackage{booktabs}
+\setmainfont{Times New Roman}
+\defaultfontfeatures{Ligatures=TeX}
+\usepackage[pdfauthor=\Autor,
+    pdftitle=\Titulo,
+    colorlinks=true,
+    linkcolor=black,
+    citecolor=black,
+    bookmarksopen=true]{hyperref}
+\hypersetup{colorlinks, citecolor=black, urlcolor=black}
+\usepackage{bookmark}
+\usepackage[style=apa, backend=biber, sortcites, url=true, language=portuguese]{biblatex}
+\DeclareLanguageMapping{portuguese}{portuguese-apa}
+\addbibresource{ref.bib}
+\renewcommand{\baselinestretch}{1.5}
+\begin{document}
+    \title{\Titulo}
+    \author{\Autor}
+    \date{\Ano}
+    \pagenumbering{gobble}
+    \begin{titlepage}
+        \begin{center}
+            \vspace*{4cm}
+
+            \textbf{\large UNIVERSIDADE ABERTA}
+
+            \textbf{\large UNIVERSIDADE DE TRÁS-OS-MONTES E ALTO DOURO}
+
+            \vspace{1cm}
+
+            \begin{minipage}{0.4\textwidth}
+                \centering
+                \includegraphics[width=0.8\textwidth]{uab}
+            \end{minipage}
+            \begin{minipage}{0.4\textwidth}
+                \centering
+                \includegraphics[width=0.8\textwidth]{utad}
+            \end{minipage}
+
+            \vspace{1.5cm}
+
+            \textbf{\large \Titulo}
+
+            \textbf{\large \SubTitulo}
+
+            \vspace{1.5cm}
+
+            \textbf{\large \Autor}
+
+            \vspace{2cm}
+
+            \textbf{\large Mestrado em Engenharia Informática e Tecnologia Web}
+            \vfill
+            \textbf{\Ano}
+        \end{center}
+    \end{titlepage}
+    \renewcommand{\contentsname}{Índice}
+    \cleardoublepage
+    \pagenumbering{roman}
+    \tableofcontents
+    \newpage
+    \listoffigures
+    \newpage
+    \listoftables
+    \newpage
+    \cleardoublepage
+    \pagenumbering{arabic}
+    \section{Introdução}
+    Este relatório descreve a arquitectura empresarial atual (“AS-IS”) da Direção Municipal de Higiene Urbana (DMHU), entidade da Câmara Municipal de Lisboa (CML), com base na documentação fornecida no âmbito da unidade curricular de Planeamento e Desenvolvimento de Sistemas de Informação (PDSI). O objetivo é estabelecer uma base sólida para o desenvolvimento futuro da arquitetura “TO-BE”, com foco na transformação digital no contexto de uma Lisboa enquanto Smart City.
+
+    \section{Missão e Estratégia}
+    A missão da DMHU é assegurar a gestão do sistema integrado de resíduos urbanos do município de Lisboa e gerir a frota municipal, promovendo a sustentabilidade e a qualidade de vida urbana.
+
+    A estratégia da unidade integra-se na estratégia geral da CML, destacando-se os seguintes objetivos estratégicos:
+    \begin{itemize}
+        \item Estudos e procedimentos para uma cidade sustentável;
+        \item Políticas de manutenção do espaço público;
+        \item Sustentabilidade ambiental com reciclagem e reutilização;
+        \item Renovação da frota com energias alternativas;
+        \item Ferramentas de gestão para otimizar recursos.
+    \end{itemize}
+
+    \section{Organização}
+    A DMHU está organizada em duas grandes estruturas: o \textbf{Departamento de Higiene Urbana (DHU)} e o \textbf{Departamento de Reparação e Manutenção Mecânica (DRMM)}. Estes são apoiados por sete estruturas superiores, como o Gabinete de Apoio à Direção (GADM), Núcleo Jurídico (NJ), Núcleo de Gestão do Orçamento (NGOC), Núcleo de Armazéns (NA), entre outros.
+
+    \subsection{Atores Internos e Externos}
+    Os atores internos incluem colaboradores das várias unidades e departamentos da DMHU. Os atores externos envolvem:
+    \begin{itemize}
+        \item Cidadãos (através de plataformas como “Na Minha Rua Lx”);
+        \item Juntas de Freguesia;
+        \item Entidades reguladoras como a ERSAR;
+        \item Prestadores de serviços e empreiteiros;
+        \item Entidades municipais parceiras (como GOPI, DSI, etc.).
+    \end{itemize}
+
+    \section{Processos de Negócio}
+    A DMHU possui cinco processos principais:
+    \begin{enumerate}
+        \item \textbf{Gestão da Recolha de Resíduos} — inclui planeamento de circuitos, gestão de contentores, execução da recolha e registo de dados;
+        \item \textbf{Gestão da Relação com o Cidadão} — interação com o GOPI e análise de pedidos;
+        \item \textbf{Gestão de Recursos Humanos} — cadastro, ocorrências, formação, fardamento, desempenho, férias;
+        \item \textbf{Gestão do Armazém} — pedidos de materiais, controlo de stocks;
+        \item \textbf{Gestão da Frota} — coordenação com outras unidades municipais, manutenção e operacionalidade.
+    \end{enumerate}
+
+    \section{Informação e Aplicações}
+    Os principais fluxos de informação incluem:
+    \begin{itemize}
+        \item Ordens de trabalho e folhas de consulta;
+        \item Equipamentos (viaturas, máquinas, EPI’s);
+        \item Ocorrências e pedidos dos cidadãos;
+        \item Registos de funcionários e sua performance;
+        \item Gestão de stocks e armazém.
+    \end{itemize}
+
+    \subsection{Sistemas de Informação Existentes}
+    \begin{itemize}
+        \item \textbf{Na Minha Rua Lx} — plataforma de interação com o cidadão;
+        \item \textbf{LxRequests} — gestão de pedidos e reclamações;
+        \item \textbf{RH2011} — gestão administrativa de RH e formação;
+        \item \textbf{Relógio Ponto} — controlo de assiduidade;
+        \item \textbf{SST} — sistema de segurança e saúde no trabalho;
+        \item \textbf{LU (Urban Clean)} — gestão de circuitos e equipamentos.
+    \end{itemize}
+
+    \section{Considerações Finais}
+    Esta descrição detalhada da arquitectura empresarial da DMHU fornece uma base concreta para a transição futura da organização para uma arquitetura “TO-BE”. Identificaram-se os principais fluxos de informação, processos e atores, bem como os sistemas de suporte utilizados, essenciais para delinear o plano estratégico e tecnológico para uma Lisboa mais eficiente e sustentável.
+
+    \section*{Referências Bibliográficas}
+    \begin{itemize}
+        \item Câmara Municipal de Lisboa. \textit{Relatório de Atividades 2015 da DMHU}. Lisboa, 2015.
+        \item Direção Municipal de Higiene Urbana. \textit{Organização da DMHU 2019}.
+        \item PDSI. \textit{Lisbon Smart City Enterprise Architecture (AS-IS)}. Universidade Aberta e UTAD.
+        \item OpenGroup. \textit{Archimate 2.1 Specification}. Disponível em: \url{https://pubs.opengroup.org/architecture/archimate2-doc/chap08.html}
+    \end{itemize}
+
+    \newpage
+    \printbibliography
+
+
+\end{document}
