@@ -90,10 +90,13 @@
     \newpage
     \cleardoublepage
     \pagenumbering{arabic}
-    \section{Introdução}
-    Este relatório descreve a arquitectura empresarial atual (“AS-IS”) da Direção Municipal de Higiene Urbana (DMHU), entidade da Câmara Municipal de Lisboa (CML), com base na documentação fornecida no âmbito da unidade curricular de Planeamento e Desenvolvimento de Sistemas de Informação (PDSI). O objetivo é estabelecer uma base sólida para o desenvolvimento futuro da arquitetura “TO-BE”, com foco na transformação digital no contexto de uma Lisboa enquanto Smart City.
 
-    \section{Missão e Estratégia}
+
+    \section{Introdução}\label{sec:introducao}
+    Este relatório descreve a arquitetura empresarial atual (“AS-IS”) da Direção Municipal de Higiene Urbana (DMHU), entidade da Câmara Municipal de Lisboa (CML), com base na documentação fornecida no âmbito da unidade curricular de Planeamento e Desenvolvimento de Sistemas de Informação (PDSI). O objetivo é estabelecer uma base sólida para o desenvolvimento futuro da arquitetura “TO-BE”, com foco na transformação digital no contexto de uma Lisboa enquanto Smart City.
+
+
+    \section{Missão e Estratégia}\label{sec:missao-e-estrategia}
     A missão da DMHU é assegurar a gestão do sistema integrado de resíduos urbanos do município de Lisboa e gerir a frota municipal, promovendo a sustentabilidade e a qualidade de vida urbana.
 
     A estratégia da unidade integra-se na estratégia geral da CML, destacando-se os seguintes objetivos estratégicos:
@@ -105,10 +108,12 @@
         \item Ferramentas de gestão para otimizar recursos.
     \end{itemize}
 
-    \section{Organização}
-    A DMHU está organizada em duas grandes estruturas: o \textbf{Departamento de Higiene Urbana (DHU)} e o \textbf{Departamento de Reparação e Manutenção Mecânica (DRMM)}. Estes são apoiados por sete estruturas superiores, como o Gabinete de Apoio à Direção (GADM), Núcleo Jurídico (NJ), Núcleo de Gestão do Orçamento (NGOC), Núcleo de Armazéns (NA), entre outros.
 
-    \subsection{Atores Internos e Externos}
+    \section{Organização}\label{sec:organizacao}
+    A DMHU está organizada em duas grandes estruturas: o \textbf{Departamento de Higiene Urbana (DHU)} e o \textbf{Departamento de Reparação e Manutenção Mecânica (DRMM)}.
+    Estes são apoiados por sete estruturas superiores, como o Gabinete de Apoio à Direção (GADM), Núcleo Jurídico (NJ), Núcleo de Gestão do Orçamento (NGOC), Núcleo de Armazéns (NA), entre outros.
+
+    \subsection{Atores Internos e Externos}\label{subsec:atores-internos-e-externos}
     Os atores internos incluem colaboradores das várias unidades e departamentos da DMHU. Os atores externos envolvem:
     \begin{itemize}
         \item Cidadãos (através de plataformas como “Na Minha Rua Lx”);
@@ -118,7 +123,8 @@
         \item Entidades municipais parceiras (como GOPI, DSI, etc.).
     \end{itemize}
 
-    \section{Processos de Negócio}
+
+    \section{Processos de Negócio}\label{sec:processos-de-negocio}
     A DMHU possui cinco processos principais:
     \begin{enumerate}
         \item \textbf{Gestão da Recolha de Resíduos} — inclui planeamento de circuitos, gestão de contentores, execução da recolha e registo de dados;
@@ -128,7 +134,8 @@
         \item \textbf{Gestão da Frota} — coordenação com outras unidades municipais, manutenção e operacionalidade.
     \end{enumerate}
 
-    \section{Informação e Aplicações}
+
+    \section{Informação e Aplicações}\label{sec:informacao-e-aplicacoes}
     Os principais fluxos de informação incluem:
     \begin{itemize}
         \item Ordens de trabalho e folhas de consulta;
@@ -138,7 +145,7 @@
         \item Gestão de stocks e armazém.
     \end{itemize}
 
-    \subsection{Sistemas de Informação Existentes}
+    \subsection{Sistemas de Informação Existentes}\label{subsec:sistemas-de-informacao-existentes}
     \begin{itemize}
         \item \textbf{Na Minha Rua Lx} — plataforma de interação com o cidadão;
         \item \textbf{LxRequests} — gestão de pedidos e reclamações;
@@ -148,15 +155,37 @@
         \item \textbf{LU (Urban Clean)} — gestão de circuitos e equipamentos.
     \end{itemize}
 
-    \section{Considerações Finais}
+
+    \section{Questões}\label{sec:questoes}
+
+    \subsection{O Contexto da DMHU}\label{subsec:o-contexto-da-dmhu}
+    ......
+
+    \subsection{Produtos e Serviços de Negócio}\label{subsec:produtos-e-servicos-do-negocio}
+    ......
+
+    \subsection{Estrutura da Organização}\label{subsec:estrutura-da-organizacao}
+    ......
+
+    \subsection{Relação entre Processos e Serviços de Negócio}\label{subsec:relacao-entre-processos-e-servicos-de-negocio}
+    ......
+
+    \subsection{Visão Geral dos Processos de Negócio}\label{subsec:visao-geral-dos-processos-de-negocio}
+    ......
+
+
+    \section{Considerações Finais}\label{sec:consideracoes-finais}
     Esta descrição detalhada da arquitectura empresarial da DMHU fornece uma base concreta para a transição futura da organização para uma arquitetura “TO-BE”. Identificaram-se os principais fluxos de informação, processos e atores, bem como os sistemas de suporte utilizados, essenciais para delinear o plano estratégico e tecnológico para uma Lisboa mais eficiente e sustentável.
 
+    \newpage
+    % Mover referencias para ref.bib
     \section*{Referências Bibliográficas}
     \begin{itemize}
-        \item Câmara Municipal de Lisboa. \textit{Relatório de Atividades 2015 da DMHU}. Lisboa, 2015.
+        \item Câmara Municipal de Lisboa. \textit{Relatório de Atividades 2015 da DMHU}.
+        Lisboa, 2015.
         \item Direção Municipal de Higiene Urbana. \textit{Organização da DMHU 2019}.
-        \item PDSI. \textit{Lisbon Smart City Enterprise Architecture (AS-IS)}. Universidade Aberta e UTAD.
-        \item OpenGroup. \textit{Archimate 2.1 Specification}. Disponível em: \url{https://pubs.opengroup.org/architecture/archimate2-doc/chap08.html}
+        \item OpenGroup. \textit{Archimate 2.1 Specification}.
+        Disponível em: \url{https://pubs.opengroup.org/architecture/archimate2-doc/chap08.html}
     \end{itemize}
 
     \newpage
