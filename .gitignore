@@ -1,3 +1,2 @@
 out/*
-!out/topico_3.pdf
-!out/topico_4.pdf
+!out/*.pdf
