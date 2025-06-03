@@ -1,5 +1,5 @@
 <component name="ProjectRunConfigurationManager">
-  <configuration default="false" name="Compile simple" type="LATEX_RUN_CONFIGURATION" factoryName="LaTeX configuration factory">
+  <configuration default="false" name="Compile simple" type="LATEX_RUN_CONFIGURATION" factoryName="LaTeX configuration factory" focusToolWindowBeforeRun="true">
     <texify>
       <compiler>LUALATEX</compiler>
       <compiler-path />
@@ -10,7 +10,7 @@
       <envs />
       <expand-macros-in-environment-variables>false</expand-macros-in-environment-variables>
       <before-run-command />
-      <main-file>$PROJECT_DIR$/src/topico_5.tex</main-file>
+      <main-file>$PROJECT_DIR$/src/topico_6.tex</main-file>
       <output-path>$PROJECT_DIR$/out</output-path>
       <auxil-path>{projectDir}/auxil</auxil-path>
       <compile-twice>false</compile-twice>
