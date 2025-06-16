@@ -10,7 +10,7 @@
       <envs />
       <expand-macros-in-environment-variables>false</expand-macros-in-environment-variables>
       <before-run-command />
-      <main-file>$PROJECT_DIR$/src/topico_6.tex</main-file>
+      <main-file>$PROJECT_DIR$/src/final.tex</main-file>
       <output-path>$PROJECT_DIR$/out</output-path>
       <auxil-path>{projectDir}/auxil</auxil-path>
       <compile-twice>false</compile-twice>

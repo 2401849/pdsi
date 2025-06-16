@@ -3,7 +3,7 @@
     <texify-bibtex>
       <compiler>BIBER</compiler>
       <compiler-path />
-      <compiler-arguments>out/topico_6.bcf</compiler-arguments>
+      <compiler-arguments>out/final.bcf</compiler-arguments>
       <envs />
       <main-file>$PROJECT_DIR$/src/ref.bib</main-file>
       <aux-dir>$PROJECT_DIR$</aux-dir>
